@@ -1,0 +1,81 @@
+.card {
+    border-radius: 7px;
+    border-collapse: collapse;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin-right: 15px;
+}
+
+.card:first-child {
+    margin-left: 15px;
+}
+
+.empty {
+    background-color: #C6B9AE;
+}
+
+.two {
+    color: #6C655C;
+    background-color: #EAE0D6;
+}
+
+.four {
+    color: #6C655C;
+    background-color: #E8DCC3;
+}
+
+.eight {
+    color: #F8F5F1;
+    background-color: #E8A773;
+}
+
+.sixteen {
+    color: #F8F5F1;
+    background-color: #E8895E;
+}
+
+.thirtyTwo {
+    color: #F8F5F1;
+    background-color: #E86E59;
+}
+
+.sixtyFour {
+    color: #F8F5F1;
+    background-color: #F65D3B;
+}
+
+.oneHundredTwentyEight {
+    color: #F8F5F1;
+    background-color: #EDCE71;
+}
+
+.twoHundredFiftySix {
+    color: #F8F5F1;
+    background-color: #EDCC63;
+}
+
+.fiveHundredTwelf {
+    color: #F8F5F1;
+    background-color: #ECC850;
+}
+
+.oneThousandTwentyFour {
+    color: #F8F5F1;
+    background-color: #ECC850;
+}
+
+.twoThousandFourtyEight {
+    color: #F8F5F1;
+    background-color: #ECC850;
+}
+
+.fourThousandNintySix {
+    color: #F8F5F1;
+    background-color: #FF3E44;
+}
+
+.eightThousandOneHundredNinetyTwo {
+    color: #F8F5F1;
+    background-color: #FF211D;
+}

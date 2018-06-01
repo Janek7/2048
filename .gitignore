@@ -1,0 +1,7 @@
+# Phpstorm Files
+.idea
+
+# Converted JS
+js/game.js
+js/main.js
+js/stats.js

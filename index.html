@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="https://cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.1.1/css/clear-sans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="game-header">
+        <div class="header-row">
+            <div id="title">2048</div>
+            <div id="boxes">
+                <div class="box win-box">
+                    <span class="box-header">WINS</span>
+                    <br/>
+                    <span id="winNumber" class="box-text">0</span>
+                </div>
+                <div class="box score-box">
+                    <span class="box-header">BEST</span>
+                    <br/>
+                    <span id="bestScore" class="box-text">0</span>
+                </div>
+                <div class="box score-box">
+                    <span class="box-header">SCORE</span>
+                    <br/>
+                    <span id="actualScore" class="box-text">0</span>
+                </div>
+                <span id="updateScore" class="box-text"></span>
+            </div>
+        </div>
+        <div class="header-row">
+            <p id="desc">Move and join the numbers to get the <b>2048 tile</b>!</p>
+            <div id="startButton">Start new Game</div>
+        </div>
+    </div>
+    <div id="game-box"></div>
+    <div class="info-box">
+        <div class="info-header">WIN</div>
+        <div class="info-subtext">Congratulation! Keep playing or try again.</div>
+    </div>
+</div>
+<script type="application/ecmascript" src="js/stats.js"></script>
+<script type="application/ecmascript" src="js/game.js"></script>
+<script type="application/ecmascript" src="js/main.js"></script>
+</body>
+</html>

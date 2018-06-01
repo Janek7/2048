@@ -1,0 +1,5 @@
+node.js is required
+
+npm install --save jquery
+npm install --save @types/jquery
+npm install -g typescript
