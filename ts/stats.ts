@@ -14,8 +14,3 @@ if (bestScore == null) {
     bestScore = "0";
 }
 $("#bestScore").html(bestScore);
-
-
-function updateStatsInCookie(key: string, value: string): void {
-    Cookies.set(key, value);
-}

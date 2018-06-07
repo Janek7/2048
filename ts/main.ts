@@ -23,7 +23,7 @@ $(document).keydown(function(event) {
     if (game != null) {
         if (!game.hasPossibleAction()) {
             //after lose quit actions -> force new start
-            if (this.gameState == GameState.INGAME) this.end();
+            if (game.gameState == GameState.INGAME) game.end();
             return;
         } else if (game.gameState == GameState.GOAL_REACHED) {
             //after reach 2048 keep playing

@@ -85,7 +85,6 @@ class Game {
                 break;
         }
 
-        //TODO: Überspring Merge Fix
         //merge cards
         let merges: number = 0;
         let mergeValue: number = 0;
@@ -112,7 +111,7 @@ class Game {
                                 let winDisplay: JQuery = $("#winNumber");
                                 let newWinNumber: string = (parseInt(winDisplay.html()) + 1) + "";
                                 winDisplay.html(newWinNumber);
-                                updateStatsInCookie('wins', newWinNumber);
+                                Cookies.set('wins', newWinNumber);
                             }
                             this.getFieldFromPos(field.pos).setCard(
                                 new Card(newValue, getNewDiv())
@@ -222,15 +221,12 @@ class Game {
      */
     hasPossibleAction(): boolean {
 
-        let freeField: boolean = false;
         for (let field: Field of this.fields) {
             if (field.card.value == Value.EMPTY) {
-                freeField = true;
-                break;
+                return true;
             }
         }
 
-        let possibleMerge: boolean = false;
         for (let field: Field of this.fields) {
             let surroundingFields: Field[] = [
                 this.getFieldFromPos(new Pos(field.pos.row + 1, field.pos.col)),
@@ -241,15 +237,11 @@ class Game {
             for (let surroundingField: Field of surroundingFields) {
                 if (surroundingField != null) {
                     if (surroundingField.card.value == field.card.value) {
-                        possibleMerge = true;
-                        break;
+                        return true;
                     }
                 }
             }
-            if (possibleMerge) break;
         }
-
-        return freeField || possibleMerge;
 
     }
 
